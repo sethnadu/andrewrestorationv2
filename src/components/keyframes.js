@@ -17,3 +17,11 @@ export const keyFrameSubTitles = keyframes `
     60% {opacity: 0}
     100% {opacity: 1}
 `
+
+export const keyFrameLink = keyframes `
+    0% {opacity: 0 }
+    40% {opacity: 0}
+    70% {opacity: 1; font-size: 1.2rem}
+    85% {font-size: 1.4rem}
+    100% {font-size: 1.2rem}
+`

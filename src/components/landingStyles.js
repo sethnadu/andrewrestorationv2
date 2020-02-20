@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {keyFrameImage, keyFrameText, keyFrameSubTitles} from './keyframes'
+import {keyFrameImage, keyFrameText, keyFrameSubTitles, keyFrameLink} from './keyframes'
 
 export const MainDiv = styled.div `
     display: flex;
@@ -23,6 +23,23 @@ export const Title = styled.h2 `
 
 `
 
+export const TitleTablet = styled.h2 `
+    font-size: 3rem;
+    color: white;
+    margin: auto;
+    text-align: center;
+
+`
+
+export const TitleMobile = styled.h2 `
+    font-size: 2.4rem;
+    padding: 20px;
+    color: white;
+    margin: auto;
+    text-align: center;
+
+`
+
 export const SubTitle = styled.h3 `
     font-size: 1.2rem;
     color: white;
@@ -30,12 +47,20 @@ export const SubTitle = styled.h3 `
     animation: ${keyFrameSubTitles} 7s ease-in-out;
 `
 
+export const SubMobile = styled.h3 `
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    animation: ${keyFrameSubTitles} 7s ease-in-out;
+`
+
 export const Links = styled.h3 `
     font-size: 1.2rem;
     color: white;
-    text-align: left;
-    animation: ${keyFrameSubTitles} 7s ease-in-out;
+    // text-decoration: underline white;
+    animation: ${keyFrameLink} 10s ease-in-out;
 `
+    
 
 export const LeftDiv = styled.div `
     display: flex;
@@ -73,7 +98,15 @@ export const LandingCar = styled.img `
 export const TopDiv = styled.div `
     display: flex;
     justify-content: space-between;
+    flex-flow: wrap;
 
+
+`
+
+export const TopDivMobile = styled.div `
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 `
 

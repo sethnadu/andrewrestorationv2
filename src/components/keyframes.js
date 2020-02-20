@@ -11,3 +11,9 @@ export const keyFrameText = keyframes `
     to {opacity: 1}
 
 `
+
+export const keyFrameSubTitles = keyframes `
+    0% {opacity: 0 }
+    60% {opacity: 0}
+    100% {opacity: 1}
+`

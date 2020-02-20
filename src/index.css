@@ -1,13 +1,21 @@
+
+@font-face {
+  font-family: '10 Muc Zeit Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('10 Muc Zeit Medium'), url('./Assets/Fonts/Muc-Zeit-Medium.woff') format('woff');
+  }
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "10 Muc Zeit Medium";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+    font-family: "10 Muc Zeit Medium"
 }

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {keyFrameImage, keyFrameText} from './keyframes'
+import {keyFrameImage, keyFrameText, keyFrameSubTitles} from './keyframes'
 
 export const MainDiv = styled.div `
     display: flex;
@@ -23,17 +23,34 @@ export const Title = styled.h2 `
 
 `
 
+export const SubTitle = styled.h3 `
+    font-size: 1.2rem;
+    color: white;
+    text-align: right;
+    animation: ${keyFrameSubTitles} 7s ease-in-out;
+`
+
+export const Links = styled.h3 `
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+    animation: ${keyFrameSubTitles} 7s ease-in-out;
+`
+
 export const LeftDiv = styled.div `
     display: flex;
-    width: 40%;
-    max-width: 500px;
+    width: 45%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px
+    
 
 `
 
 export const LogoDiv = styled.img `
     width: 100%;
     max-width: 160px;
-    margin: 30px 0 0 40px;
+    align-self: center;
 `
 
 export const RightDiv = styled.div `
@@ -51,6 +68,13 @@ export const LandingCar = styled.img `
     height: 100%;
     animation: ${keyFrameImage} 5s ease-in-out;
     
+`
+
+export const TopDiv = styled.div `
+    display: flex;
+    justify-content: space-between;
+
+
 `
 
 

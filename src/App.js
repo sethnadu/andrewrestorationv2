@@ -1,11 +1,13 @@
 import React from 'react';
 import Landing from './components/landing'
+import Navigation from './components/Navigation'
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Landing />
+      {/* <Landing /> */}
+      <Navigation />
     </div>
   );
 }

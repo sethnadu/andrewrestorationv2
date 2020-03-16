@@ -43,9 +43,10 @@ export const TitleMobile = styled.h2 `
 export const SubTitle = styled.h3 `
     font-size: 1.2rem;
     color: white;
-    text-align: right;
+    text-align: center;
     animation: ${keyFrameSubTitles} 7s ease-in-out;
 `
+
 
 export const SubMobile = styled.h3 `
     font-size: 1rem;
@@ -97,7 +98,7 @@ export const LandingCar = styled.img `
 
 export const TopDiv = styled.div `
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-flow: wrap;
 
 

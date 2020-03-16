@@ -1,5 +1,6 @@
 import React from 'react'
-import Carousel from 'react-material-ui-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import Paper from '@material-ui/core'
 
 // Styled Components
@@ -21,54 +22,68 @@ import Porch from '../Assets/Images/Main-Carousel/porch.jpg'
 import Restored from '../Assets/Images/Main-Carousel/restored.jpg'
 import StonePath from '../Assets/Images/Main-Carousel/stonepath.jpg'
 
-const imageObj = [{
-    image: Basement
-},
-{
-    image: Basement2
-},
-{
-    image: Beam
-},
-{
-    image: Bedroom
-},
-{
-    image: BrickPath
-},
-{
-    image: BrickRetainingWall
-},
-{
-    image: Ceiling
-},
-{
-    image: Kitchen
-},
-{
-    image: Kitchen2
-},
+const imageObj = [
+//     {
+//     image: Basement
+// },
+// {
+//     image: Basement2
+// },
+// {
+//     image: Beam
+// },
+// {
+//     image: Bedroom
+// },
+// {
+//     image: BrickPath
+// },
+// {
+//     image: BrickRetainingWall
+// },
+// {
+//     image: Ceiling
+// },
+// {
+//     image: Kitchen
+// },
+// {
+//     image: Kitchen2
+// },
 {
     image: LivingRoom
 },
-{
-    image: Outside
-},
+// {
+//     image: Outside
+// },
 {
     image: Porch
 },
-{
-    image: Restored
-},
+// {
+//     image: Restored
+// },
 {
     image: StonePath
 }]
 
 const LandingCarousel = () => {
     return (
-        <Carousel indicators={false} style={{height: "100%", height: "100%"}}>
+        <Carousel 
+        autoPlay={true} 
+        showThumbs={false} 
+        dynamicHeight={false}
+        swipeable={true}
+        showStatus={false}
+        showArrows={false}
+        infiniteLoop={true}
+        interval={6000}
+        transitionTime={1000}
+
+        >
             {imageObj.map(image => {
-                return <LandingCar src={image.image} alt ='landing page' />
+                return <div>
+                    <img style={{objectPosition: "center", objectFit:"cover", width: "100%", height: "100%", maxHeight: '540px'}} src={image.image} alt ='landing page' />
+                </div> 
             })}
         </Carousel>
     )
